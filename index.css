@@ -16,7 +16,6 @@ body{
     font-family: 'Roboto Mono', monospace;
     width: 110rem;
     margin: 0 auto;
-    color: 
 }
 
 .head-text h1{
@@ -26,8 +25,18 @@ body{
     display:inline-block;
     margin: 0 auto;
     padding: 0 5%; 
+    position:relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 
 }
+
+@keyframes heading {
+    0% {top: -50rem}
+    100% {top: -1rem} 
+}
+
 
 .head-text{
     display: inline-block;
@@ -161,6 +170,7 @@ p{
     object-fit: cover;
     object-position: center top;
 }
+
 
 
 
